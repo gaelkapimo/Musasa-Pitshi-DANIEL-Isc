@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biographie — Design Professionnel</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #e5e5e59f;
+  --card-bg: #cdcdcd;
+  --text: #080808;
+  --muted: #000000;
+  --primary: #010102;
+  --secondary: #8a483e;
+  --accent: #58cf4f;
+  --shadow: rgb(68, 68, 68);
+}
+* { box-sizing: border-box; margin:0; padding:0; font-family:'Roboto', sans-serif; }
+body { background: var(--bg); color: var(--text); line-height:1.6; }
+
+header { text-align:center; padding:50px 20px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color:#fff; border-radius:0 0 50% 50%/0 0 10% 10%; }
+header h1 { font-size:clamp(40px,6vw,72px); font-weight:700; margin-bottom:12px; }
+header p { font-size:clamp(18px,2vw,24px); color:#f1f1f1; opacity:0.9; max-width:750px; margin:auto; }
+
+main { max-width:1300px; margin:-60px auto 0; padding:0 20px; }
+section { display:grid; grid-template-columns: repeat(auto-fit, minmax(340px,1fr)); gap:20px; }
+.card { background: var(--card-bg); border-radius:32px; padding:20px; box-shadow:0 20px 60px var(--shadow); transition: transform 0.5s ease, box-shadow 0.5s ease; opacity:0; transform: translateY(40px); }
+.card.show { opacity:1; transform: translateY(0); }
+.card:hover { transform: translateY(-10px); box-shadow:0 30px 80px var(--shadow); }
+.card h2 { font-weight:700; color: var(--primary); margin-bottom:24px; font-size:2rem; border-bottom:2px solid var(--accent); display:inline-block; padding-bottom:6px; }
+.card p { color: var(--muted); font-size:1rem; }
+.row { display:flex; gap:35px; align-items:center; flex-wrap:wrap; }
+.row img { width:220px; height:220px; border-radius:20px; object-fit:cover; border:3px solid var(--accent); transition: all 0.4s ease; }
+.row img:hover { transform: scale(1.08); }
+.row div { flex:1; min-width:180px; }
+
+/* Nouveau style tableau pleine largeur */
+.full-table-card { background:none; box-shadow:none; padding:0; grid-column:1/ -1; }
+.full-table-card table { width:100%; border-collapse: collapse; font-size:1rem; }
+.full-table-card th, .full-table-card td { border:1px solid #ddd; padding:12px 10px; text-align:center; }
+.full-table-card th { background: var(--primary); color:#fff; font-weight:600; }
+.full-table-card tr:nth-child(even) { background: #f5f5f5; }
+.full-table-card tr:hover { background: #e0f7fa; transition:0.3s; }
+
+footer { text-align:center; padding:60px 20px; font-size:0.95rem; color:var(--muted); margin-top:100px; }
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>Biographie</h1>
+</header>
+
+<main>
+<section>
+
+<div class="card">
+<h2>Description</h2>
+<p>Je m’appelle Musasa Pitshi DANIEL, je suis né le 25 octobre 2006 à Lubumbashi, en République Démocratique du Congo (Kinshasa).
+Je suis actuellement étudiant en classe de Pré-ESI C. Sérieux dans mes études, je cherche à construire un avenir meilleur à travers l’apprentissage et le travail.
+Je crois en mes capacités et je continue à avancer chaque jour pour atteindre mes objectifs académiques et personnels.
+</p>
+</div>
+
+<div class="card">
+<h2>Niveau Académique</h2>
+<div class="row">
+<img src="enfance.jpg" alt="Photo académique">
+<div><p>Je suis étudiant de l'école supérieure des ingénieurs  (ESI) C à l'université de lubumbashi.
+.</p></div>
+</div>
+</div>
+
+<div class="card">
+<h2>Mon Rêve</h2>
+<div class="row">
+<img src="reve.jpg"Mon Rêve">
+<div><p>Mon rêve est de construire un avenir solide et épanouissant grâce à l’éducation et au travail acharné. Je souhaite devenir un professionnel compétent et respecté, capable de contribuer au développement de mon pays et d’inspirer ceux qui m’entourent. Chaque jour, je m’efforce de développer mes compétences, de croire en mes capacités et de franchir les obstacles pour atteindre mes objectifs académiques et personnels. Je veux transformer ma détermination en réussite et montrer que, avec de la persévérance, tout est possible.</p></div>
+</div>
+</div>
+
+<div class="card">
+<h2>Mes Ambitions</h2>
+<div class="row">
+<img src="ambtion.jpg" alt="Mes Ambitions">
+<div><p> 
+Réussir brillamment mes études et développer une solide base scientifique.
+Approfondir ses connaissances en chimie et dans les sciences en général.
+Devenir un professionnel compétent, respecté et utile à la société.
+Mettre son intelligence et ses compétences au service du développement de son pays.
+Continuer à apprendre chaque jour et viser l’excellence dans tout ce qu’il entreprend.
+Construire un avenir stable et inspirer les autres par son travail et sa discipline.
+Devenir un modèle de sérieux, de persévérance et de réussite.
+</p></div>
+</div>
+</div>
+
+<div class="card">
+<h2>Mon Enfance</h2>
+<div class="row">
+<img src="ma-bio.jpg" alt="Mon Enfance">
+<div><p>Quand Daniel était enfant, ses journées commençaient toujours avec une curiosité plus grande que lui. Il aimait observer le monde en silence, écouter les histoires des grands et poser mille questions sans attendre toutes les réponses. Son enfance était faite de petits bonheurs : des rires partagés, des rêves naïfs et une imagination qui courait plus vite que ses pas.
+Très tôt, Dan a appris à se débrouiller, à tomber puis à se relever sans faire trop de bruit. Chaque expérience, même la plus simple, devenait pour lui une leçon. Il ne le savait pas encore, mais ces moments forgeaient déjà sa manière d’être : calme, observateur et profondément humain.
+En grandissant, il a gardé de son enfance cette lumière intérieure, celle qui pousse à avancer malgré les obstacles, à croire en soi même quand le chemin semble flou. Et aujourd’hui encore, quelque part en lui, l’enfant qu’il était continue de rêver, de sourire et d’aller de l’avant.</p></div>
+</div>
+</div>
+
+<div class="card">
+<h2>Moi Aujourd’hui</h2>
+<div class="row">
+<img src="today.jpg" alt="Moi Aujourd'hui">
+<div><p>Je suis motivé à apprendre, à travailler dur et à ne pas me laisser distraire par ce qui n’est pas important. Mon objectif, c’est de grandir chaque jour, d’atteindre mes rêves académiques et personnels, et de devenir une meilleure version de moi-même. Je sais que ça demande de la patience, de la discipline et de la persévérance, mais je suis prêt à donner le meilleur de moi-même pour y arriver.
+
+Pour moi, chaque journée est une nouvelle occasion de progresser, d’apprendre quelque chose de nouveau et de me rapprocher un peu plus de ce que je veux devenir. Je suis sérieux dans ce que je fais, je crois en mon potentiel et je continue d’avancer, un pas après l’autre, vers mon avenir.</p></div>
+</div>
+</div>
+
+<!-- Tableau pleine largeur -->
+<div class="full-table-card">
+<h2>Tableau</h2>
+<table>
+<thead><tr><th>N°</th><th>Colonne 1</th><th>Colonne 2</th><th>Colonne 3</th><th>Colonne 4</th></tr></thead>
+<tbody>
+<script>for(let i=1;i<=16;i++){document.write(`<tr><td>${i}</td><td></td><td></td><td></td><td></td></tr>`);}</script>
+</tbody>
+</table>
+</div>
+
+</section>
+</main>
+
+<footer>
+<p>© 2026 — Mwatanga Kanguvu Bryan| Tous droits réservés</p>
+</footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => { if(entry.isIntersecting){entry.target.classList.add('show');} });
+},{ threshold:0.2 });
+cards.forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
